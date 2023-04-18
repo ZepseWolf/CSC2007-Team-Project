@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a5333a</color>
+    <color name="colorPrimaryDark">#7D1217</color>
+    <color name="colorSecondary">#898d9e</color>
+    <color name="colorAccent">#CC5E63</color>
+    <color name="cardBackground">#f8f8fb</color>
+    <color name="colorTextHeader">#0F2851</color>
+    <color name="black">#FF000000</color>
+    <color name="darkGray">#363636</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorSuccess">#41CC74</color>
+    <color name="my_custom_day_color">#2986cc</color>
+    <color name="blue">#3db0f2</color>
+    <color name="green">#3df264</color>
+    <color name="red">#f2493d</color>
+    <color name="orange">#f2a93d</color>
+    <color name="pastel_red">#45ffbab6</color>
+    <color name="pastel_blue">#45acd8f2</color>
+    <color name="pastel_green">#45a8eaa8</color>
+
+    <color name="piechart1">#81282d</color>
+    <color name="piechart2">#ac353d</color>
+    <color name="piechart3">#c95259</color>
+    <color name="piechart4">#d67d82</color>
+    <color name="piechart_ready">#e4a8ac</color>
+</resources>
+

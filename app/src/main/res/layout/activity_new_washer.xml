@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.AddNewWasherActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/imageViewBack"
+                    android:layout_width="@dimen/back_arrow_width"
+                    android:layout_height="@dimen/back_arrow_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back_arrow"
+                    app:tint="@color/darkGray" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/bold_font"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/washer_title"
+                android:textColor="#0F2851"
+                android:textSize="@dimen/large_title_text"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutBack"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/select_washer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_text"
+                android:text="Select Washer"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+            <Spinner
+                android:id="@+id/spinner_washers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:minHeight="@dimen/login_min_height"
+                app:layout_constraintTop_toBottomOf="@+id/select_washer" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/start_date"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:hint="Start Date"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_washers">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/start_date_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:minHeight="@dimen/login_min_height" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/start_time"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:hint="Start Time"
+                app:layout_constraintTop_toBottomOf="@+id/start_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/start_time_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:minHeight="@dimen/login_min_height" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/return_date"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:hint="Return Date"
+                app:layout_constraintTop_toBottomOf="@+id/start_time">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/return_date_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:minHeight="@dimen/login_min_height" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/return_time"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:hint="Return Time"
+                app:layout_constraintTop_toBottomOf="@+id/return_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/return_time_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:minHeight="@dimen/login_min_height" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/select_nurse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_text"
+                android:text="Select Nurse"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/return_time" />
+
+            <Spinner
+                android:id="@+id/spinner_nurses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:minHeight="@dimen/login_min_height"
+                app:layout_constraintTop_toBottomOf="@+id/select_nurse" />
+
+            <TextView
+                android:id="@+id/select_cat_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_text"
+                android:text="@string/select_category"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_nurses" />
+
+            <Spinner
+                android:id="@+id/spinner_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:minHeight="@dimen/login_min_height"
+                app:layout_constraintTop_toBottomOf="@+id/select_cat_title" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_note"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:hint="@string/description_hint"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_categories">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_note"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="text|textMultiLine"
+                    android:minHeight="100dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:text="ADD EVENT"
+                app:layout_constraintTop_toBottomOf="@id/text_note" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">CSC2007Team06</string>
+    <string name="intro_login_button">Log In</string>
+    <string name="intro_logging_in_button">Logging In…</string>
+    <string name="intro_logo_description">Tan Tock Seng Logo</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="test">test string for development</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--login activity strings-->
+    <string name="welcome">Welcome Back</string>
+    <string name="email">E-mail</string>
+    <string name="enter_email">Enter your e-mail here</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Place the password here</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="account">Don\'t have an account yet?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="signing_up">Signing up…</string>
+
+
+    <!--    Forgotten password activity strings-->
+    <string name="receive_link">You will receive a link to confirm the password to the e-mail address provided</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_equipment">Equipment</string>
+    <string name="menu_profile">Profile</string>
+    <string name="receive_email">Confirm Email</string>
+    <string name="receive_password">Confirm Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+
+    <string name="menu_new_password">Enter a new password</string>
+    <string name="enter_old_password">Place the old password here</string>
+    <string name="enter_new_password">Place the new password here</string>
+
+    <!-- Create activity strings-->
+    <string name="create_acc_title">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_acc_placeholder_name">Enter your name</string>
+    <string name="create_acc_placeholder_email">Enter your e-mail here</string>
+    <string name="create_acc_placeholder_password">Place the password here</string>
+    <string name="create_acc_error_8_char">At least 8 characters</string>
+    <string name="create_acc_error_both_upper_lower">Both uppercase and lowercase characters</string>
+    <string name="create_acc_error_one_symbol">At least one number or symbol</string>
+    <string name="create_acc_terms_conditions">By continuing you accept our Privacy Policy and Term of Use</string>
+
+
+    <!-- Home fragment strings -->
+    <string name="home_logo_description">Tan Tock Seng Logo</string>
+    <string name="home_notification_icon">Notification</string>
+    <string name="home_hi_text_view">Hi</string>
+    <string name="home_notification_text_view">Notifications</string>
+    <string name="home_notification_view_all">View All</string>
+    <string name="home_pills_icon_notification_card">Notification Icon</string>
+    <string name="home_navigate_to_text_view">Navigate To</string>
+    <string name="home_equipment_card_icon">Equipment card icon</string>
+    <string name="home_equipment_card_text_view">Equipment</string>
+    <string name="home_forms_card_icon">Forms card icon</string>
+    <string name="home_forms_card_text_view">Forms</string>
+    <string name="home_schedule_card_icon">Schedule card icon</string>
+    <string name="home_schedule_card_text_view">Schedule</string>
+
+    <!-- Profile Activity strings -->
+    <string name="profile_personal_data">Personal Data</string>
+    <string name="profile_staff_id">Staff ID</string>
+    <string name="profile_name">Full Name</string>
+    <string name="profile_email">E-mail Address</string>
+    <string name="sign_out">Sign Out</string>
+
+
+    <!-- Add Equipment Activity strings -->
+    <string name="add_equipnment_endoscope">Add Endoscope</string>
+    <string name="add_equipnment">Add Equipment</string>
+    <string name="add_washer">Add Washer</string>
+
+    <!-- Notification strings -->
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">CSC2007Team06</string>
+    <string name="notification_channel_description">Notifications</string>
+    <string name="notification_title">CSC2007Team06</string>
+
+    <!--edit profile-->
+    <string name="personalData">Personal Data</string>
+    <string name="edit_your_full_name">Edit Your Full Name</string>
+    <string name="confirm_changes">Confirm Changes</string>
+    <string name="edit_your_email_address">Edit Your Email Address</string>
+
+    <!-- Schedule Fragment -->
+    <string name="endoscope_button">Endoscope Event</string>
+    <string name="washer_button">Washer Event</string>
+    <string name="select_category">Select Category</string>
+
+    <!-- Schedule common fields -->
+    <string name="cat_return">Return</string>
+    <string name="cat_loan">Loan</string>
+    <string name="cat_sampling">Sampling</string>
+    <string name="add_new">+ Add new</string>
+
+    <string name="description_hint">(Optional) Type the note</string>
+    <string name="staff_id_hint">Staff ID*</string>
+    <string name="date">Date</string>
+    <string name="duration_title">Duration Of Event</string>
+    <string name="duration_hint">Duration in second</string>
+
+    <!-- Add washer activity -->
+    <string name="washer_title">New Washer Event</string>
+    <string name="washer_model">Washer Model</string>
+    <string name="washer_id">Washer ID*</string>
+    <string name="washer_create_button">Create New Washer</string>
+
+    <!-- Add endoscope activity -->
+    <string name="endoscope_title">New Endoscope Event</string>
+    <string name="endoscope_model">Endoscope Model</string>
+    <string name="endoscope_id">Endoscope ID*</string>
+    <string name="endoscope_create_button">Create New Endoscope</string>
+
+    <!--edit profile-->
+    <string name="enter_a_new_password">Enter a new password</string>
+    <string name="change_password">change_password</string>
+    <string name="new_email">New Email</string>
+
+    <!-- Add equipment status -->
+    <string-array name="status">
+        <item>READY</item>
+        <item>SAMPLING</item>
+        <item>WASHING</item>
+        <item>REPAIR</item>
+    </string-array>
+
+</resources>

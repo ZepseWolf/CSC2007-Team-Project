@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="normal_text">16sp</dimen>
+
+    <!-- login activity-->
+    <dimen name="login_min_height">48dp</dimen>
+    <dimen name="login_title_text">40sp</dimen>
+
+    <!-- login and forgot password activity-->
+    <dimen name="title_margin">70dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="small_padding">15dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+    <dimen name="margin_top_text">10dp</dimen>
+    <dimen name="text_margin_start">5dp</dimen>
+    <dimen name="bold_font">25sp</dimen>
+
+    <!-- back arrow-->
+    <dimen name="back_arrow_height">30dp</dimen>
+    <dimen name="back_arrow_width">50dp</dimen>
+
+    <!-- edit equipment activity-->
+    <dimen name="edit_equipment_margin">10dp</dimen>
+
+    <dimen name="title_text">24sp</dimen>
+    <dimen name="large_title_text">28sp</dimen>
+    <dimen name="sub_title_text">20sp</dimen>
+</resources>

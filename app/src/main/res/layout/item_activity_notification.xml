@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:overScrollMode="always">
+
+    <ImageButton
+        android:id="@+id/imageButtonCheck"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Notification checkbox"
+        android:src="@drawable/ic_notification_checked" />
+
+    <TextView
+        android:id="@+id/tvNotificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send equipment E31-58A out for repair"
+        android:textColor="@color/black" />
+
+</LinearLayout>

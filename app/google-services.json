@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "753640957545",
+    "project_id": "csc2007-team06",
+    "storage_bucket": "csc2007-team06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753640957545:android:d09ac636ea8cc18138a4f8",
+        "android_client_info": {
+          "package_name": "edu.singaporetech.csc2007team06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753640957545-2fbfpo74oqmhi88thndv8dcvtohc94j7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0U9LCHqN634feGZCXFbF6UCL0XgdrwIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753640957545-2fbfpo74oqmhi88thndv8dcvtohc94j7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

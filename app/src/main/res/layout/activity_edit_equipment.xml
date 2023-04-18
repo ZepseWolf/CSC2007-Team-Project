@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditEquipmentActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/back_arrow_width"
+                android:layout_height="@dimen/back_arrow_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="@color/darkGray" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipment"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/bold_font"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPastHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past History"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutBack" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPastHistory"
+            tools:layout_editor_absoluteX="-165dp" />
+
+        <ImageView
+            android:id="@+id/imageViewEditEquipment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/iconEdit"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/iconSave"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/baseline_download_done_24" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/imageViewEditEquipment"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+            <TextView
+                android:id="@+id/textViewEndoscopeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="48B"
+                android:textAlignment="center"
+                android:textColor="#363636"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewModelNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model E01"
+                android:textColor="#B7B7C1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    Upcoming Repair-->
+        <TextView
+            android:id="@+id/textRepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_equipment_margin"
+            android:text="Upcoming Repair"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/editTextRepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/textSample"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textRepair"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+        <ImageView
+            android:id="@+id/iconCalendar_Repair"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextRepair"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRepair"
+            app:layout_constraintTop_toTopOf="@+id/editTextRepair"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+        <TextView
+            android:id="@+id/textSample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_equipment_margin"
+            android:text="Upcoming Sample"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRepair"
+            tools:layout_editor_absoluteX="17dp" />
+
+        <EditText
+            android:id="@+id/editTextSample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round"
+            android:enabled="false"
+            android:focusable="false"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSample" />
+
+        <ImageView
+            android:id="@+id/iconCalendar_Wash"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextSample"
+            app:layout_constraintEnd_toEndOf="@+id/editTextSample"
+            app:layout_constraintTop_toTopOf="@+id/editTextSample"
+            app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+        <!--    Nurse in Charge (NIC)-->
+        <TextView
+            android:id="@+id/textNIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_equipment_margin"
+            android:text="Nurse in Charge"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSample"
+            tools:layout_editor_absoluteX="17dp" />
+
+        <Spinner
+            android:id="@+id/spinnerNurses"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/round"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/textAN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNIC" />
+
+        <!--    Additional Notes -->
+
+        <TextView
+            android:id="@+id/textAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Additional Notes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNIC" />
+
+        <EditText
+            android:id="@+id/editTextNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:enabled="false"
+            android:focusable="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAN"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

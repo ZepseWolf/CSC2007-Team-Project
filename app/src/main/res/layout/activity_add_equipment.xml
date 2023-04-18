@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/imageViewBack"
+                    android:layout_width="@dimen/back_arrow_width"
+                    android:layout_height="@dimen/back_arrow_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back_arrow"
+                    app:tint="@color/darkGray" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/bold_font"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Add Equipment"
+                android:layout_marginTop="@dimen/padding"
+                android:textAlignment="center"
+                android:textColor="#0F2851"
+                android:textSize="@dimen/large_title_text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutBack" />
+
+            <TextView
+                android:id="@+id/labelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="10dp"
+                android:text="Label"
+                android:textSize="@dimen/normal_text"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/labelTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E.g. 53B"
+                app:boxBackgroundColor="#F7F7FA"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:endIconDrawable="@drawable/ic_qrcode"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/labelEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/labelErrorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Error Message"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextField" />
+
+            <TextView
+                android:id="@+id/modelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="10dp"
+                android:text="Model"
+                android:textSize="@dimen/normal_text"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextField" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/modelTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E.g. Model E03"
+                app:boxBackgroundColor="#F7F7FA"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:endIconDrawable="@drawable/ic_qrcode"
+                app:layout_constraintTop_toBottomOf="@+id/modelTextView"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modelEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/modelErrorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Error Message"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/modelTextField" />
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="10dp"
+                android:text="Status"
+                android:textSize="@dimen/normal_text"
+                app:layout_constraintTop_toBottomOf="@+id/modelTextField" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/status"
+                app:boxBackgroundColor="#F7F7FA"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/statusTextView" />
+
+            <TextView
+                android:id="@+id/staffTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="10dp"
+                android:text="Staff In-charge"
+                android:textSize="@dimen/normal_text"
+                app:layout_constraintTop_toBottomOf="@+id/statusSpinner" />
+
+            <Spinner
+                android:id="@+id/staffSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:boxBackgroundColor="#F7F7FA"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/staffTextView" />
+
+            <TextView
+                android:id="@+id/staffErrorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Error Message"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/staffSpinner" />
+
+            <TextView
+                android:id="@+id/noteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="10dp"
+                android:text="Note"
+                android:textSize="@dimen/normal_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/staffSpinner" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:padding="10dp"
+                app:boxBackgroundColor="#F7F7FA"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/noteTextView" />
+
+            <Button
+                android:id="@+id/addEquipmentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="Add Equipment"
+                android:textSize="@dimen/normal_text"
+                app:cornerRadius="@dimen/corner_radius"
+                app:layout_constraintTop_toBottomOf="@+id/noteEditText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
